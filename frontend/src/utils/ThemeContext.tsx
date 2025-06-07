@@ -1,0 +1,1 @@
+// Este archivo ya no es necesario, usamos un enfoque más simple basado en clases CSS

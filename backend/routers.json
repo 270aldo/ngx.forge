@@ -1,0 +1,1 @@
+{"routers":{"orchestrator":{"name":"orchestrator","version":"2025-04-26T22:52:46","disableAuth":false},"auth":{"name":"auth","version":"2025-04-26T22:52:45","disableAuth":false},"config":{"name":"config","version":"2025-04-26T22:03:09","disableAuth":false},"a2a":{"name":"a2a","version":"2025-04-26T22:52:46","disableAuth":false}}}
