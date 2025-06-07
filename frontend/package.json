@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "jest"
   },
   "dependencies": {
     "@11labs/react": "0.0.4",
@@ -300,11 +301,16 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
+    "@firebase/app": "^0.11.1",
     "@sentry/react": "7.101.1",
     "@sentry/types": "7.101.1",
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/user-event": "^14.4.3",
     "@types/amplitude-js": "^8",
     "@types/file-saver": "^2",
     "@types/firebase": "^3.2.1",
+    "@types/jest": "^29.5.12",
     "@types/leaflet": "1.9.14",
     "@types/lodash": "^4",
     "@types/mapbox-gl": "2.7.20",
@@ -325,6 +331,7 @@
     "@types/recordrtc": "^5",
     "@types/three": "^0",
     "@types/vinyl-fs": "^3",
+    "@vitejs/plugin-react": "^4.0.0",
     "@vitejs/plugin-react-swc": "3.3.2",
     "autoprefixer": "^10.4.20",
     "dotenv": "16.4.5",
@@ -332,19 +339,24 @@
     "eslint-plugin-react": "7.32.2",
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-react-refresh": "0.4.3",
+    "jest": "^29.7.0",
     "openapi-types": "12.1.3",
     "postcss": "^8.4.45",
     "raw-body": "2.5.2",
     "tailwindcss": "^3.4.10",
+    "ts-jest": "^29.1.1",
     "ts-prune": "0.10.3",
     "type-fest": "4.6.0",
     "typescript": "5.2.2",
     "typescript-language-server": "4.3.2",
     "vite": "4.4.5",
-    "vite-tsconfig-paths": "4.2.2",
-    "@vitejs/plugin-react": "^4.0.0",
-    "@firebase/app": "^0.11.1"
+    "vite-tsconfig-paths": "4.2.2"
   },
   "packageManager": "yarn@4.0.2",
-  "nodeLinker": "pnpm"
+  "nodeLinker": "pnpm",
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "postcss.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
