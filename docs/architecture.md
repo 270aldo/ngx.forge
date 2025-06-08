@@ -19,6 +19,6 @@ La plataforma se compone de un backend en **FastAPI** y un frontend en **React**
 - **Orchestrator**: es el agente maestro. Recibe las consultas de los usuarios y decide a qué agente especializado dirigirlas. Mantiene contexto de sesión y registra el agente usado.
 - **A2A (Agent to Agent)**: define un protocolo de mensajería entre agentes. Permite almacenar conversaciones, histórico y metadatos para cada interacción.
 - **Agentes especializados**: módulos futuros que implementarán la lógica para entrenamiento, nutrición, recuperación, etc. Actualmente el orquestador simula sus respuestas.
-- **Config**: expone la configuración necesaria para el frontend, como las credenciales de Supabase.
+- **Config**: expone la configuración necesaria para el frontend, como las credenciales de Supabase. La URL de Supabase se define mediante la variable de entorno `SUPABASE_URL`.
 
 El objetivo final de **NexusForge** es ofrecer una plataforma SaaS con IA que integre diversos agentes expertos (entrenamiento, nutrición, biometría, entre otros) coordinados por un orquestador. Esto permitirá a los usuarios recibir planes y recomendaciones personalizadas desde una única interfaz.
