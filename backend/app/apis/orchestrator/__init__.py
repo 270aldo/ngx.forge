@@ -4,7 +4,6 @@ from typing import Dict, Any, Optional, List, Union
 import uuid
 from datetime import datetime
 import databutton as db
-import json
 from app.apis.auth import get_current_user
 from app.apis.a2a import A2AMessage, AgentInfo
 
