@@ -46,3 +46,13 @@ def test_agents_status(client):
     data = resp.json()
     assert "agents" in data
     assert isinstance(data["agents"], list)
+
+
+def test_agent_info(client):
+    resp = client.get(
+        "/routes/orchestrator/agent/training",
+        headers=auth_headers(),
+    )
+    assert resp.status_code == 200
+    data = resp.json()
+    assert data["agent_id"] == "training"
