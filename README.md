@@ -28,6 +28,7 @@ Antes de ejecutar la aplicación es necesario definir algunas variables de entor
 
 - `JWT_SECRET`: clave utilizada para firmar los tokens generados por el backend.
 - `SUPABASE_ANON_KEY`: clave anónima de Supabase que el backend expone al frontend.
+- `SUPABASE_URL`: URL base de Supabase utilizada por el backend.
 - `DATABUTTON_PROJECT_ID`: opcional, identifica el proyecto Databutton para la compilación.
 - `DATABUTTON_EXTENSIONS`: opcional, lista de extensiones Databutton en formato JSON.
 - `DATABUTTON_SERVICE_TYPE`: define si el backend se ejecuta en modo `development` o `production`.

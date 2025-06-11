@@ -1,5 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
+import os
 import databutton as db
 
 router = APIRouter()
@@ -15,7 +16,7 @@ def get_supabase_config() -> SupabaseConfigResponse:
     """Obtiene la configuración de Supabase para el frontend"""
     try:
         # URL de Supabase proporcionada por el usuario
-        supabase_url = "https://blrzviguanblulnxepnx.supabase.co"
+        supabase_url = os.getenv("SUPABASE_URL", "https://blrzviguanblulnxepnx.supabase.co")
         
         # Obtener la clave anónima desde los secretos
         supabase_anon_key = db.secrets.get("SUPABASE_ANON_KEY")
