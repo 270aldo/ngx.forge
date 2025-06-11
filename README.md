@@ -75,3 +75,8 @@ Visit <http://localhost:5173> to view the application.
 
 Para una descripción general de los módulos principales (Auth, Orchestrator, A2A
  y agentes especializados) consulta [docs/architecture.md](docs/architecture.md).
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
